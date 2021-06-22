@@ -1,0 +1,52 @@
+{
+    "env": {
+      "browser": true,
+      "es2020": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "plugin:react/recommended",
+      "airbnb",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "prettier/react",
+      "plugin:prettier/recommended",
+      "plugin:react-hooks/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint", "prettier"],
+    "rules": {
+      "@typescript-eslint/interface-name-prefix": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "react/prop-types": "off",
+      "no-case-declarations": "off",
+      "react/display-name": "off",
+      "react/jsx-filename-extension": "off",
+      "import/extensions": "off",
+      "indent": "off",
+      "prettier/prettier": ["error", { "endOfLine": "auto" }],
+      "no-use-before-define": "off",
+      "import/prefer-default-export": "off",
+      "react/jsx-props-no-spreading": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "consistent-return": "off",
+      "react/require-default-props": "off",
+      "react/no-array-index-key": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {}
+      },
+      "react": {
+        "version": "detect"
+      }
+    }
+}
